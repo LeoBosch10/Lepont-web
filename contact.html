@@ -55,7 +55,7 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a href="courses.html" class="get-started-btn">Comienza ahora</a>
+      <a href="contact.html" class="get-started-btn">Comienza ahora</a>
 
     </div>
   </header><!-- End Header -->
@@ -105,8 +105,20 @@
           </div>
 
           <div class="col-lg-8 mt-5 mt-lg-0">
+<script> 
+function postear()
+ {
+  alert('probando')
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+ }
+</script>
+            <form 
+            name="contacto"
+            action="" 
+            method="post" 
+            role="form" 
+            class="php-email-form"
+            onsubmit= "javascript:postear()">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
