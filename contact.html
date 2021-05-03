@@ -108,12 +108,21 @@
 <script> 
 function postear()
  {
-  alert('probando')
+  let myForm = document.getElementById('contacto');
+  let formData = new FormData(myForm)
+  let post = new URLSearchParams(formData).toString()
+  fetch('https://www.lepont.ar/', {
+    method: 'POST',
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: post
+  }).then(() => console.log('Form successfully submitted'))
+  .catch((error) => alert(error))
 
  }
 </script>
             <form 
             name="contacto"
+            id="contacto"
             action="" 
             method="post" 
             role="form" 
