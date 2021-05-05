@@ -126,6 +126,7 @@ function postear()
             action="" 
             method="post" 
             role="form"
+            data-netlify-recaptcha="true"
             data-netlify="true"
             class="php-email-form"
             onsubmit= "javascript:postear()">
@@ -140,6 +141,7 @@ function postear()
               <div class="form-group mt-3">
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
+              <div data-netlify-recaptcha="true"></div>
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
@@ -149,6 +151,7 @@ function postear()
                 <div class="sent-message">Su mensaje ha sido enviado. Muchas gracias!</div>
               </div>
               <div class="text-center"><button type="submit">Enviar mensaje</button></div>
+             
          
             </form>
 
@@ -243,7 +246,7 @@ function postear()
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
